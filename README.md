@@ -398,7 +398,7 @@ Now let’s take a look at this via the **Kubernetes dashboard**. Open the dashb
 
 You should see something similar to this…
 
-![dashboard](Kubernetes_Examples/HelloWorld/assets/dashboard-ui.png)
+![dashboard](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/dashboard-ui.png)
 
 
 It’s your cluster in the flesh! The top centered section displays the statuses of your workloads within the cluster. Workloads are objects used to manage and run your containers in your cluster -- so for example, you should see circles that represent your Pods, Deployments, and Replica Sets. Each of those objects fall in the workload category. The circles are pass/fail pie charts, with green indicating the percentage of success and red indicating the percentage of failures. For example, let’s say we have 3 Pods in our cluster, and 1 of our Pods has died for whatever reason. The Pod chart would be shown as mostly green representing 67% and partially red representing 33%.

@@ -185,6 +185,42 @@ Go and download the HelloWorld source code by running the commands below:
         git clone https://github.com/sangam14/k8s-go-hello-world-demo.git
         cd k8s-go-hello-world-demo/helloworld
 
+
+```
+Biradars-MacBook-Air-4:helloworld sangam$ docker build -t helloworld:v1 .
+Sending build context to Docker daemon  17.92kB
+Step 1/2 : FROM golang:onbuild
+onbuild: Pulling from library/golang
+ad74af05f5a2: Pull complete 
+2b032b8bbe8b: Pull complete 
+a9a5b35f6ead: Pull complete 
+25d9840c55bc: Pull complete 
+d792ec7d64a3: Pull complete 
+be556a93c22e: Pull complete 
+3a5fce283a1e: Pull complete 
+0621865a0c2e: Pull complete 
+Digest: sha256:c0ec19d49014d604e4f62266afd490016b11ceec103f0b7ef44875801ef93f36
+Status: Downloaded newer image for golang:onbuild
+# Executing 3 build triggers
+ ---> Running in 4d7162ec6ff8
++ exec go get -v -d
+Removing intermediate container 4d7162ec6ff8
+ ---> Running in e4b44faa7f26
++ exec go install -v
+app
+Removing intermediate container e4b44faa7f26
+ ---> 46f0d00080fc
+Step 2/2 : EXPOSE 8080
+ ---> Running in 177d0bcde920
+Removing intermediate container 177d0bcde920
+ ---> 72ac82991fdb
+Successfully built 72ac82991fdb
+Successfully tagged helloworld:v1
+Biradars-MacBook-Air-4:helloworld sangam$ 
+
+
+````
+
 > Our app is a simple http web server that prints a "Hello World" message. You can give it a test run using 
 **go run helloworld.go** and then opening **http://localhost:8080** in your browser.
 

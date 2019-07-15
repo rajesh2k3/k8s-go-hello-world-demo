@@ -276,7 +276,7 @@ Go ahead and enter your credentials when prompted.
 >If you’ve installed Docker for Mac, you can log into your Docker account by clicking the Docker whale icon at the top of your screen as shown below.
 
 
-![docker-image](https://github.com/sangam14/k8s-go-hello-world-demo/master/Docker-screenshot.png)
+![docker-image](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/Docker-screenshot.png)
 
 
 > The green light indicates that Docker is currently running. ([Click here for these instructions using other operating systems](https://docs.docker.com/docker-for-windows/install/).)
@@ -439,7 +439,7 @@ Now let’s test to see if our Service is accessible:
 > This uses a local IP address that serves our app and opens up a browser displaying our “Hello World” message.
 
 
-![service image](k8s-go-hello-world-demo/K8s_Diagrams1-4-1.jpg)
+![service image](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/K8s_Diagrams1-4-1.jpg)
 
 > Check out this diagram of our service.
 
@@ -473,7 +473,7 @@ Let’s check to see if the number of replicas have been updated:
 
 And now our Service will automatically begin distributing traffic amongst these three Pods. 
 
-![service-image-update](Kubernetes_Examples/HelloWorld/assets/Service_Diagrams1-3.jpg)
+![service-image-update](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/Service_Diagrams1-3.jpg)
 
 
 ---- 

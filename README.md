@@ -434,7 +434,10 @@ Now let’s test to see if our Service is accessible:
  ```       
   Biradars-MacBook-Air-4:k8s-go-hello-world-demo sangam$ minikube service helloworld
 🎉  Opening kubernetes service default/helloworld in default browser...
+
 ```
+
+![browser](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/browser_go_app.png)
 
 > This uses a local IP address that serves our app and opens up a browser displaying our “Hello World” message.
 

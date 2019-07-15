@@ -310,6 +310,25 @@ Finally, push the image to your Docker Hub repo:
         docker push yourhubusername/hello-world
 
 
+
+
+```
+Biradars-MacBook-Air-4:helloworld sangam$ docker tag helloworld:v1 sangam14/hello-world:v1
+Biradars-MacBook-Air-4:helloworld sangam$ docker push sangam14/hello-world
+The push refers to repository [docker.io/sangam14/hello-world]
+82c8a7f71889: Pushed 
+d94c6198e159: Pushed 
+e15881a3c920: Pushed 
+dfd527c9b5e7: Mounted from library/golang 
+36ba0159de56: Mounted from library/golang 
+4ff814ecd9f4: Mounted from library/golang 
+74f1f103792f: Mounted from library/golang 
+6367890e52bf: Mounted from library/golang 
+f3ed6cb59ab0: Mounted from library/golang 
+654f45ecb7e3: Mounted from library/golang 
+2c40c66f7667: Mounted from library/golang 
+v1: digest: sha256:0c36322fb51c5d6d2c980c62c9b340081554fdb252c967a94b3489a7bf453867 size: 2624
+```
 ---- 
 
 ### Run the Container

@@ -34,16 +34,9 @@ Use curl to download the latest release of Minikube:
         curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 && \
         chmod +x minikube && \
         sudo mv minikube /usr/local/bin/
-
-Now we’re gonna use Homebrew to install the driver:
-
-        brew install docker-machine-driver-xhyve
-        sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-        sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
         
         
- install
-
+        ```
 ```
 Biradars-MacBook-Air-4:~ sangam$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 && \
 >     chmod +x minikube && \
@@ -57,6 +50,27 @@ Biradars-MacBook-Air-4:~ sangam$ minikube start
 👍  minikube will upgrade the local cluster from Kubernetes 1.10.0 to 1.15.0
 💿  Downloading Minikube ISO ...
  30.03 MB / 129.33 MB [==========>---------------------------------]  23.22% 29s
+ ```
+
+Now we’re gonna use Homebrew to install the driver:
+
+        brew install docker-machine-driver-xhyve
+        sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+        sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+        
+        
+ install
+
+
+ 
+```
+
+Biradars-MacBook-Air-4:~ sangam$ minikube start
+😄  minikube v1.2.0 on darwin (amd64)
+🔥  Creating virtualbox VM (CPUs=2, Memory=2048MB, Disk=20000MB) ...
+🐳  Configuring environment for Kubernetes v1.15.0 on Docker 18.09.6
+💾  Downloading kubeadm v1.15.0
+💾  Downloading kubelet v1.15.0
 
 
 ```
@@ -64,6 +78,8 @@ Biradars-MacBook-Air-4:~ sangam$ minikube start
 We need to install Kubernetes’ kubectl command-line tool, which will be our right hand for interacting with our cluster:
 
         brew install kubectl
+
+
 
 
 Now let’s go ahead and start the Minikube cluster:

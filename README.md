@@ -276,7 +276,7 @@ Go ahead and enter your credentials when prompted.
 >If you’ve installed Docker for Mac, you can log into your Docker account by clicking the Docker whale icon at the top of your screen as shown below.
 
 
-![docker-image](https://github.com/sangam14/k8s-go-hello-world-demo/blob/master/Docker-screenshot.png)
+![docker-image](https://raw.githubusercontent.com/sangam14/k8s-go-hello-world-demo/master/Docker-screenshot.png)
 
 
 > The green light indicates that Docker is currently running. ([Click here for these instructions using other operating systems](https://docs.docker.com/docker-for-windows/install/).)

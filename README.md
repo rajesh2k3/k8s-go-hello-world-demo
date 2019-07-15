@@ -80,7 +80,7 @@ After that, we configured Kubernetes’ command line-tool, **_kubectl_**, to com
 
 Go and download the HelloWorld source code by running the commands below:
 
-        git clone https://github.com/sangam14/k8s-go-hello-world-demo
+        git clone https://github.com/sangam14/k8s-go-hello-world-demo.git
         cd k8s-go-hello-world-demo/helloworld
 
 > Our app is a simple http web server that prints a "Hello World" message. You can give it a test run using 

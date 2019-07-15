@@ -242,7 +242,12 @@ Now let’s build our container image and tag it:
 Let’s double check to see if our build succeeded. If it was, we’ll see our image listed by running this command:
 
         docker images
-
+        
+```
+Biradars-MacBook-Air-4:helloworld sangam$    docker images
+REPOSITORY                                 TAG                 IMAGE ID            CREATED              SIZE
+helloworld                                 v1                  72ac82991fdb        About a minute ago   704MB
+```
 
 ---- 
 

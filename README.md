@@ -40,6 +40,26 @@ Now we’re gonna use Homebrew to install the driver:
         brew install docker-machine-driver-xhyve
         sudo chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
         sudo chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+        
+        
+ install
+
+```
+Biradars-MacBook-Air-4:~ sangam$ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-darwin-amd64 && \
+>     chmod +x minikube && \
+>     sudo mv minikube /usr/local/bin/
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 40.7M  100 40.7M    0     0  3317k      0  0:00:12  0:00:12 --:--:-- 2893k
+Password:
+Biradars-MacBook-Air-4:~ sangam$ minikube start
+😄  minikube v1.2.0 on darwin (amd64)
+👍  minikube will upgrade the local cluster from Kubernetes 1.10.0 to 1.15.0
+💿  Downloading Minikube ISO ...
+ 30.03 MB / 129.33 MB [==========>---------------------------------]  23.22% 29s
+
+
+```
 
 We need to install Kubernetes’ kubectl command-line tool, which will be our right hand for interacting with our cluster:
 

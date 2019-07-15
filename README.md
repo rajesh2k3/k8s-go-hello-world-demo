@@ -418,17 +418,27 @@ Every Pod is born with its own unique IP address. When a service is created, the
 Go ahead and create a Service by running the command below:
 
         kubectl expose deployment helloworld --type=LoadBalancer
+        
+                
+```
+Biradars-MacBook-Air-4:k8s-go-hello-world-demo sangam$  kubectl expose deployment helloworld --type=LoadBalancer
+service/helloworld exposed
+```
 
 > Here we use the  **--type=LoadBalancer** flag to indicate that we want our Service to be exposed outside of our cluster.
 
 Now let’s test to see if our Service is accessible:
 
         minikube service helloworld
+ ```       
+  Biradars-MacBook-Air-4:k8s-go-hello-world-demo sangam$ minikube service helloworld
+🎉  Opening kubernetes service default/helloworld in default browser...
+```
 
 > This uses a local IP address that serves our app and opens up a browser displaying our “Hello World” message.
 
 
-![service image](Kubernetes_Examples/HelloWorld/assets/K8s_Diagrams1-4-1.jpg)
+![service image](k8s-go-hello-world-demo/K8s_Diagrams1-4-1.jpg)
 
 > Check out this diagram of our service.
 
@@ -442,6 +452,7 @@ Our application is available for external use! But what if there’s too much us
 We can accomplish this by running the **_kubectl scale_** command. Let’s go ahead and use it to create 2 replicas:
 
         kubectl scale deployment hello-world --replicas=3
+
 
 >Note: Since we are creating 2 more replicas, we set the value to **_3_** because that will be the **total number** of Pods in the Deployment.
 
